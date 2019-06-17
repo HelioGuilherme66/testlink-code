@@ -58,7 +58,17 @@ switch ($doc_info->type) {
   break;
     
   case DOC_TEST_SPEC:
-    $printingOptions['importance'] = $doc_info->test_priority_enabled;
+    if($args->mode == 'simple') {
+              $printingOptions['importance'] = false; 
+              $printingOptions['author'] = false;
+              $printingOptions['keyword'] = false;
+              $printingOptions['cfields'] = false;
+              $printingOptions['requirement'] = false;
+              $printingOptions['execution'] = false;
+    } 
+    else {
+        $printingOptions['importance'] = $doc_info->test_priority_enabled;
+    }
 
     switch($doc_info->content_range) {
       case 'testsuite':
@@ -284,6 +294,7 @@ function init_args(&$dbHandler) {
                    "docTestPlanId" => array(tlInputParameter::INT_N),  
                    "id" => array(tlInputParameter::INT_N),
                    "type" => array(tlInputParameter::STRING_N,0,20),
+                   "mode" => array(tlInputParameter::STRING_N,0,20),
                    "format" => array(tlInputParameter::INT_N),
                    "level" => array(tlInputParameter::STRING_N,0,32),
                    "with_user_assignment" => array(tlInputParameter::INT_N));

@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * TestLink Open Source Project - http://testlink.sourceforge.net/
+ * This script is distributed under the GNU General Public License 2 or later.
+ *
+ * @filesource  DocMod.php
+ * @copyright   2005-2016, TestLink community
+ * @link        http://www.testlink.org/
+ *
+ */
+
+$TLS_plugin_DocMod_description = "Modificação de Documentos";
+$TLS_plugin_DocMod_config = "Configurar o Plugin";
+$TLS_plugin_DocMod_left_bottom_link = "Link à Esquerda em Baixo";
+$TLS_plugin_DocMod_right_bottom_link = "Link à Direita em Baixo";
+$TLS_plugin_DocMod_left_top_link = "Link à Esquerda no Topo";
+$TLS_plugin_DocMod_right_top_link = "Link à Direita no Topo";
+$TLS_plugin_DocMod_testsuite_display_message = "Isto é um Teste";
+$TLS_plugin_DocMod_config_page_saved = "Configuração Gravada";
+$TLS_plugin_DocMod_config_page_header_message = "Configuração Exemplo";
+$TLS_plugin_DocMod_config_page_title = "Configuração do DocMod";
+$TLS_plugin_DocMod_config_label_config1 = "Item 1 da Configuração";
+$TLS_plugin_DocMod_config_label_config2 = "Item 2 da Configuração";
+$TLS_plugin_DocMod_config_label_save_button = "Gravar Configuração";
